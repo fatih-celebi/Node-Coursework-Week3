@@ -43,7 +43,7 @@ app.delete("/bookings/:id", function (req, res) {
     bookings = bookings.filter((booking) => booking.id !== bookingsId);
     res.send({ bookings });
   } else {
-    res.send(`We couldn't find the ID ${JSON.stringify(bookingsId)}`);
+    res.send(`We couldn't find the ID`);
   }
 });
 
